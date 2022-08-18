@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ThreeFragment">
+    tools:context=".FlowFragment">
 
     <TextView
         android:layout_marginVertical="24dp"
@@ -13,13 +13,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="64sp"
-        android:text="@string/three" />
+        android:text="@string/flow_step_hi" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/next_button"
-        android:text="@string/flow_step"
+        android:id="@+id/next_fragment"
+        android:text="@string/one"
         android:textSize="24sp"
         android:textAllCaps="false" />
 

@@ -7,13 +7,13 @@
     <fragment
         android:id="@+id/oneFragment"
         android:name="com.example.androidnavigationpractice.OneFragment"
-        android:label="fragment_one"
+        android:label="Fragment One"
         tools:layout="@layout/fragment_one" />
     <fragment
         android:id="@+id/twoFragment"
         android:name="com.example.androidnavigationpractice.TwoFragment"
-        android:label="fragment_two"
-        tools:layout="@layout/fragment_two" >
+        android:label="Fragment Two"
+        tools:layout="@layout/fragment_two">
         <action
             android:id="@+id/to_three_action"
             app:destination="@id/threeFragment"
@@ -25,6 +25,40 @@
     <fragment
         android:id="@+id/threeFragment"
         android:name="com.example.androidnavigationpractice.ThreeFragment"
-        android:label="fragment_three"
+        android:label="Fragment Three"
         tools:layout="@layout/fragment_three" />
+    <fragment
+        android:id="@+id/flowFragmentHello"
+        android:name="com.example.androidnavigationpractice.FlowFragment"
+        android:label="Fragment Hello"
+        tools:layout="@layout/fragment_flow_hello">
+        <argument
+            android:name="flowStep"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_flow"
+            app:destination="@id/flowFragmentHi"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragmentHi"
+        android:name="com.example.androidnavigationpractice.FlowFragment"
+        android:label="Fragment Hi"
+        tools:layout="@layout/fragment_flow_hi">
+        <argument
+            android:name="flowStep"
+            android:defaultValue="2"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_flow"
+            app:destination="@id/oneFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
 </navigation>

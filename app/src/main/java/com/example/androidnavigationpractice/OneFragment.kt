@@ -17,9 +17,7 @@ class OneFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentOneBinding.inflate(inflater, container, false)
-
         val animOptions = navOptions {
             anim {
                 enter = R.anim.slide_in_right
@@ -31,6 +29,8 @@ class OneFragment : Fragment() {
         binding.nextButton.setOnClickListener {
             findNavController().navigate(R.id.twoFragment, null, animOptions)
         }
+        // Inflate the layout for this fragment
         return binding.root
     }
+
 }

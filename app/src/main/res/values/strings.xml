@@ -5,4 +5,8 @@
     <string name="one">First Fragment</string>
     <string name="two">Second Fragment</string>
     <string name="three">Third Fragment</string>
+    <string name="next_flow">Next Fragment</string>
+    <string name="flow_step">Fragment With Args</string>
+    <string name="flow_step_hi">Hi Fragment</string>
+    <string name="flow_step_hello">Hello Fragment</string>
 </resources>
