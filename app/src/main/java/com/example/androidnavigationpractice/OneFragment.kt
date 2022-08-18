@@ -19,11 +19,6 @@ class OneFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentOneBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
         val animOptions = navOptions {
             anim {
@@ -36,5 +31,6 @@ class OneFragment : Fragment() {
         binding.nextButton.setOnClickListener {
             findNavController().navigate(R.id.twoFragment, null, animOptions)
         }
+        return binding.root
     }
 }

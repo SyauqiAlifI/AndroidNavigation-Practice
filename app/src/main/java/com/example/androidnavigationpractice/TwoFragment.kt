@@ -18,13 +18,9 @@ class TwoFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentTwoBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
         binding.nextButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.to_three_action)
         )
+        return binding.root
     }
 }
