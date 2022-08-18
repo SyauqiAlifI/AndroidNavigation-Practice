@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidNavigationPractice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="one">First Fragment</string>
+    <string name="two">Second Fragment</string>
+    <string name="three">Third Fragment</string>
+</resources>
