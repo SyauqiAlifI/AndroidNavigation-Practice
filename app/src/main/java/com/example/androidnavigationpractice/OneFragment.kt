@@ -29,6 +29,9 @@ class OneFragment : Fragment() {
         binding.nextButton.setOnClickListener {
             findNavController().navigate(R.id.twoFragment, null, animOptions)
         }
+        binding.nextFlowButton.setOnClickListener {
+            findNavController().navigate(R.id.flowFragmentHello, null, animOptions)
+        }
         // Inflate the layout for this fragment
         return binding.root
     }
